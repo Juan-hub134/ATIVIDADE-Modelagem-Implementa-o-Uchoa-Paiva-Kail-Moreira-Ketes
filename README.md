@@ -20,6 +20,10 @@ O banco de dados será desenvolvido para empresas de aluguel de veículos que at
 ## Diagrama do Banco de Dados
 ![Diagrama do Banco de Dados](./diagrama-tarefaN1.svg)
 
+
+## Tabela de Clientes
+
+Esse e o formato de SQL usado para criar uma tabela para clientes.
 ```sql
  CREATE TABLE cliente (
     id_cliente SERIAL PRIMARY KEY,
