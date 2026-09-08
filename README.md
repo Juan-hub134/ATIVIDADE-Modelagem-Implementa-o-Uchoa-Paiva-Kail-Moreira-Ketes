@@ -50,3 +50,14 @@ CREATE TABLE veiculo (
     tipo TEXT NOT NULL
 	);
 ```
+## Tabela de Atendentes
+```sql
+CREATE TABLE atendente (
+    id_atendente SERIAL PRIMARY KEY,
+    cpf VARCHAR(14) UNIQUE NOT NULL,
+    nome VARCHAR(20) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    endereco TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL
+	);
+```
