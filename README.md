@@ -20,14 +20,14 @@ O banco de dados será desenvolvido para empresas de aluguel de veículos que at
 ## Diagrama do Banco de Dados
 ![Diagrama do Banco de Dados](./diagrama-tarefaN1.svg)
 
-
-## Tabela de Cliente
+```sql
  CREATE TABLE cliente (
-     id_cliente SERIAL PRIMARY KEY,
-     cpf VARCHAR(14) NOT NULL,
-     nome VARCHAR(20) NOT NULL,
-     sobrenome VARCHAR(50) NOT NULL,
-     endereco TEXT NOT NULL,
-     dados_bancarios TEXT NOT NULL,
-     email TEXT NOT NULL
-  	);
+    id_cliente SERIAL PRIMARY KEY,
+    cpf VARCHAR(14) NOT NULL,
+    nome VARCHAR(20) NOT NULL,
+    sobrenome VARCHAR(50) NOT NULL,
+    endereco TEXT NOT NULL,
+    dados_bancarios TEXT NOT NULL,
+    email TEXT NOT NULL
+	);
+```
