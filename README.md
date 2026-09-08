@@ -23,15 +23,20 @@ O banco de dados será desenvolvido para empresas de aluguel de veículos que at
 
 ## Tabela de Clientes
 
-Esse e o formato de SQL usado para criar uma tabela para clientes.
+Esse e o formato de SQL usado para criar uma tabela para clientes. 
+* [SERIAL] Gera automaticamente um número sequencial para o ID.
+* [PRIMARY KEY] Identifica cada cliente de forma única e não permite repetição.
+* [VARCHAR] Permite armazenar um nome com N caracteres sem ocupar espaços em branco.
+* [NOT NULL] Obriga o preenchimento, evitando que não seja preenchido.
+* [TEXT] Permite armazenar textos de tamanho variável.
 ```sql
  CREATE TABLE cliente (
     id_cliente SERIAL PRIMARY KEY,
-    cpf VARCHAR(14) NOT NULL,
+    cpf VARCHAR(14) UNIQUE  NOT NULL,
     nome VARCHAR(20) NOT NULL,
     sobrenome VARCHAR(50) NOT NULL,
     endereco TEXT NOT NULL,
-    dados_bancarios TEXT NOT NULL,
-    email TEXT NOT NULL
+    dados_bancarios TEXT UNIQUE NOT NULL,
+    email TEXT UNIQUE NOT NULL
 	);
 ```
