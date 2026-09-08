@@ -61,3 +61,15 @@ CREATE TABLE atendente (
     email TEXT UNIQUE NOT NULL
 	);
 ```
+## Contrato 
+```sql
+CREATE TABLE contrato (
+    numero_contrato SERIAL PRIMARY KEY,
+    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    tipo_pagamento TEXT NOT NULL,
+    inicio_vigencia DATE NOT NULL,
+    fim_vigencia DATE NOT NULL,
+    id_cliente INT NOT NULL,
+    id_veiculo INT NOT NULL
+	);
+```
