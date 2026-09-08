@@ -40,3 +40,13 @@ Esse e o formato de SQL usado para criar uma tabela para clientes.
     email TEXT UNIQUE NOT NULL
 	);
 ```
+## Tabela de Veículos 
+```sql
+CREATE TABLE veiculo (
+    id_veiculo SERIAL PRIMARY KEY,
+    placa VARCHAR(7) UNIQUE NOT NULL,
+    marca TEXT NOT NULL,
+    modelo TEXT NOT NULL,
+    tipo TEXT NOT NULL
+	);
+```
