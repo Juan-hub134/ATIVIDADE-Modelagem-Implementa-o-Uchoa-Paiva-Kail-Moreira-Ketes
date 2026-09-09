@@ -118,13 +118,13 @@ CREATE TABLE contrato (
 	INSERT DO CONTRATO
 
 	INSERT INTO contrato 
-	(tipo_pagamento, inicio_vigencia, fim_vigencia, id_cliente, id_veiculo)
-	VALUES
-	('Cartão de crédito', '2026-01-10', '2026-02-10', 1, 1),
-	('Pix', '2026-02-15', '2026-03-15', 2, 2),
-	('Cartão de débito', '2026-03-01', '2026-04-01', 3, 3),
-	('Dinheiro', '2026-04-05', '2026-05-05', 4, 4),
-	('Cartão de crédito', '2026-05-10', '2026-06-10', 5, 5),
-	('Pix', '2026-06-15', '2026-07-15', 1, 3),
-	('Cartão de crédito', '2026-07-20', '2026-08-20', 2, 4);
+    (tipo_pagamento, inicio_vigencia, fim_vigencia, id_cliente, id_veiculo, id_atendente)
+    VALUES
+    ('Cartão de crédito', '2026-01-10', '2026-02-10', 1, 1, 1),
+    ('Pix',               '2026-02-15', '2026-03-15', 2, 2, 2),
+    ('Cartão de débito',  '2026-03-01', '2026-04-01', 3, 3, 3),
+    ('Dinheiro',          '2026-04-05', '2026-05-05', 4, 4, 4),
+    ('Cartão de crédito', '2026-05-10', '2026-06-10', 5, 5, 1),
+    ('Pix',               '2026-06-15', '2026-07-15', 1, 3, 2),
+    ('Cartão de crédito', '2026-07-20', '2026-08-20', 2, 4, 3);
 ´´´
