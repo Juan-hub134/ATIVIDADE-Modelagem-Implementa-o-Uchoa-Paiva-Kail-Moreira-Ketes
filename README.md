@@ -83,7 +83,7 @@ CREATE TABLE contrato (
 	id_atendente INT NOT NULL,
 	CONSTRAINT fk_contrato_cliente FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente),
     CONSTRAINT fk_contrato_veiculo FOREIGN KEY (id_veiculo) REFERENCES veiculo(id_veiculo),
-	CONSTRAINT fk_contrato_atendente FOREIGN KEY (id_atendente) REFERENCIES atendente(id_atendente)
+	CONSTRAINT fk_contrato_atendente FOREIGN KEY (id_atendente) REFERENCES atendente(id_atendente)
 	);
 ```
 ##  COMANDOS PARA INSERIR DADOS
