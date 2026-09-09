@@ -88,7 +88,7 @@ CREATE TABLE contrato (
 ```
 ##  COMANDOS PARA INSERIR DADOS
 ```sql
-	INSERT INTO cliente (cpf, nome, sobrenome, endereco, dados_bancarios, email)
+INSERT INTO cliente (cpf, nome, sobrenome, endereco, dados_bancarios, email)
 	VALUES
 	('111.222.333-01', 'João', 'Silva', 'Rua das Flores, 120', 'Banco 001 - Conta 12345-6', 'joao.silva@email.com'),
 	('222.333.444-02', 'Maria', 'Santos', 'Avenida Brasil, 450', 'Banco 002 - Conta 23456-7', 'maria.santos@email.com'),
@@ -98,7 +98,7 @@ CREATE TABLE contrato (
 
 	INSERT DOS VEICULOS
 
-	INSERT INTO veiculo (placa, marca, modelo, tipo)
+INSERT INTO veiculo (placa, marca, modelo, tipo)
 	VALUES
 	('ABC1D23', 'Toyota', 'Corolla', 'Sedan'),
 	('DEF4E56', 'Honda', 'Civic', 'Sedan'),
@@ -108,7 +108,7 @@ CREATE TABLE contrato (
 
 	INSERT DOS ATENDENTES
 
-	INSERT INTO atendente (cpf, nome, sobrenome, endereco, email)
+INSERT INTO atendente (cpf, nome, sobrenome, endereco, email)
 	VALUES
 	('666.777.888-06', 'Lucas', 'Ferreira', 'Rua das Palmeiras, 100', 'lucas.ferreira@empresa.com'),
 	('777.888.999-07', 'Juliana', 'Martins', 'Avenida Central, 250', 'juliana.martins@empresa.com'),
@@ -117,7 +117,7 @@ CREATE TABLE contrato (
 
 	INSERT DO CONTRATO
 
-	INSERT INTO contrato 
+INSERT INTO contrato 
     (tipo_pagamento, inicio_vigencia, fim_vigencia, id_cliente, id_veiculo, id_atendente)
     VALUES
     ('Cartão de crédito', '2026-01-10', '2026-02-10', 1, 1, 1),
