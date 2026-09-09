@@ -4,10 +4,10 @@ Tarefa N1
 
 ## Integrantes
 
-* Juan Moreira
+* Juan Moreira Morais
 * Guilherme Ketes Maia
-* Henrick Uchoa
-* Alan Paiva
+* Henrick Sousa Uchoa de Carvalho
+* Allan Paiva Lopes Filho
 
 ## Objetivo Geral
 
@@ -94,3 +94,47 @@ CREATE TABLE contrato (
 	CONSTRAINT fk_contrato_atendente FOREIGN KEY (id_atendente) REFERENCIES atendente(id_atendente)
 	);
 ```
+##  COMANDOS PARA INSERIR DADOS
+```sql
+	-- Comandos de INSERT para inserir dados de clientes, veiculos, atendentes e contratos
+
+	INSERT INTO cliente (cpf, nome, sobrenome, endereco, dados_bancarios, email)
+	VALUES
+	('111.222.333-01', 'João', 'Silva', 'Rua das Flores, 120', 'Banco 001 - Conta 12345-6', 'joao.silva@email.com'),
+	('222.333.444-02', 'Maria', 'Santos', 'Avenida Brasil, 450', 'Banco 002 - Conta 23456-7', 'maria.santos@email.com'),
+	('333.444.555-03', 'Carlos', 'Oliveira', 'Rua Central, 85', 'Banco 003 - Conta 34567-8', 'carlos.oliveira@email.com'),
+	('444.555.666-04', 'Ana', 'Costa', 'Rua do Comércio, 310', 'Banco 004 - Conta 45678-9', 'ana.costa@email.com'),
+	('555.666.777-05', 'Pedro', 'Almeida', 'Avenida Norte, 720', 'Banco 005 - Conta 56789-0', 'pedro.almeida@email.com'); 
+
+	INSERT DOS VEICULOS
+
+	INSERT INTO veiculo (placa, marca, modelo, tipo)
+	VALUES
+	('ABC1D23', 'Toyota', 'Corolla', 'Sedan'),
+	('DEF4E56', 'Honda', 'Civic', 'Sedan'),
+	('GHI7F89', 'Volkswagen', 'T-Cross', 'SUV'),
+	('JKL0G12', 'Chevrolet', 'Onix', 'Hatch'),
+	('MNO3H45', 'Fiat', 'Strada', 'Pickup');
+
+	INSERT DOS ATENDENTES
+
+	INSERT INTO atendente (cpf, nome, sobrenome, endereco, email)
+	VALUES
+	('666.777.888-06', 'Lucas', 'Ferreira', 'Rua das Palmeiras, 100', 'lucas.ferreira@empresa.com'),
+	('777.888.999-07', 'Juliana', 'Martins', 'Avenida Central, 250', 'juliana.martins@empresa.com'),
+	('888.999.000-08', 'Rafael', 'Souza', 'Rua Amazonas, 430', 'rafael.souza@empresa.com'),
+	('999.000.111-09', 'Beatriz', 'Rodrigues', 'Rua Principal, 560', 'beatriz.rodrigues@empresa.com');
+
+	INSERT DO CONTRATO
+
+	INSERT INTO contrato 
+	(tipo_pagamento, inicio_vigencia, fim_vigencia, id_cliente, id_veiculo)
+	VALUES
+	('Cartão de crédito', '2026-01-10', '2026-02-10', 1, 1),
+	('Pix', '2026-02-15', '2026-03-15', 2, 2),
+	('Cartão de débito', '2026-03-01', '2026-04-01', 3, 3),
+	('Dinheiro', '2026-04-05', '2026-05-05', 4, 4),
+	('Cartão de crédito', '2026-05-10', '2026-06-10', 5, 5),
+	('Pix', '2026-06-15', '2026-07-15', 1, 3),
+	('Cartão de crédito', '2026-07-20', '2026-08-20', 2, 4);
+´´´
