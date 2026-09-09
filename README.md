@@ -127,4 +127,7 @@ CREATE TABLE contrato (
     ('Cartão de crédito', '2026-05-10', '2026-06-10', 5, 5, 1),
     ('Pix',               '2026-06-15', '2026-07-15', 1, 3, 2),
     ('Cartão de crédito', '2026-07-20', '2026-08-20', 2, 4, 3);
-´´´
+
+```
+## IMAGENS REFERENTES AO pgAdmin 4 
+
