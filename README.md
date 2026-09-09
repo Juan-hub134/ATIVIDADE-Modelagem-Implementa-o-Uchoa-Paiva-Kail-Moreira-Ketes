@@ -146,3 +146,10 @@ INSERT INTO contrato
 * TABELA DE CONTRATOS
 
 ![contrato](./contrato.png)
+
+
+## REGRAS DO BANCO DE DADOS
+
+As regras foram definidas para manter a integridade e a organização dos dados. Cada cliente possui um identificador próprio e pode estar associado a vários contratos. Cada contrato está relacionado a um único cliente e a um único veículo.
+Os veículos também possuem um identificador próprio e podem aparecer em diferentes contratos ao longo do tempo, permitindo que o mesmo veículo seja alugado novamente após o encerramento de um contrato.
+As chaves estrangeiras da tabela CONTRATO garantem que o cliente e o veículo relacionados ao aluguel existam previamente no banco de dados.
