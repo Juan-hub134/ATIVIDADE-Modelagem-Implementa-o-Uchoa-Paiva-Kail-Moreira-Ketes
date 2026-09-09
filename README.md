@@ -1,4 +1,4 @@
-# ATIVIDADE-Modelagem-Implementa-o-Uchoa-Paiva-Kail-Moreira-Ketes
+# ATIVIDADE-Modelagem-Implementa-o-Uchoa-Paiva-Moreira-Ketes
 Tarefa N1
 # Tema: Aluguel de Carros
 
