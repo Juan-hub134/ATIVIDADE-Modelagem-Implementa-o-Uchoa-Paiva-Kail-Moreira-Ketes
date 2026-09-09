@@ -18,7 +18,7 @@ Desenvolver um banco de dados relacional para uma empresa de aluguel de veículo
 O banco de dados será desenvolvido para empresas de aluguel de veículos que atendem principalmente motoristas de aplicativos. O foco está em pessoas que utilizam veículos alugados para realizar suas atividades profissionais em plataformas como Uber e 99, facilitando o gerenciamento dos clientes, veículos e contratos de aluguel
 
 ## Diagrama do Banco de Dados
-![Diagrama do Banco de Dados](./diagrama-tarefaN1.svg)
+![Diagrama do Banco de Dados](./schema.svg)
 
 
 ## Comandos utilizados na construção do esquema das tabelas de aluguel de veículos
