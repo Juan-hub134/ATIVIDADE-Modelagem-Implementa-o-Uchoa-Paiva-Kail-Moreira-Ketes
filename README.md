@@ -38,8 +38,6 @@ O banco de dados será desenvolvido para empresas de aluguel de veículos que at
 
 ## Tabela de clientes
 ```sql
--- Tabela para armazenar os dados de cadastro de clientes
-
  CREATE TABLE cliente (
     id_cliente SERIAL PRIMARY KEY,
     cpf VARCHAR(14) UNIQUE  NOT NULL,
@@ -52,8 +50,6 @@ O banco de dados será desenvolvido para empresas de aluguel de veículos que at
 ```
 ## Tabela de Veículos 
 ```sql
--- Tabela que armazena dados de veiculos cadastrados
-
 CREATE TABLE veiculo (
     id_veiculo SERIAL PRIMARY KEY,
     placa VARCHAR(7) UNIQUE NOT NULL,
@@ -64,8 +60,6 @@ CREATE TABLE veiculo (
 ```
 ## Tabela de Atendentes
 ```sql
--- Tabela que armazena dados dos atendentes e se estao ativos na empresa de alguel de carros
-
 CREATE TABLE atendente (
     id_atendente SERIAL PRIMARY KEY,
     cpf VARCHAR(14) UNIQUE NOT NULL,
@@ -78,8 +72,6 @@ CREATE TABLE atendente (
 ```
 ## Contrato 
 ```sql
--- Tabela que armazena dados dos contratos de aluguel de veiculos e referencia a clientes, veiculos e atendentes
-
 CREATE TABLE contrato (
     numero_contrato SERIAL PRIMARY KEY,
     data TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -96,8 +88,6 @@ CREATE TABLE contrato (
 ```
 ##  COMANDOS PARA INSERIR DADOS
 ```sql
-	-- Comandos de INSERT para inserir dados de clientes, veiculos, atendentes e contratos
-
 	INSERT INTO cliente (cpf, nome, sobrenome, endereco, dados_bancarios, email)
 	VALUES
 	('111.222.333-01', 'João', 'Silva', 'Rua das Flores, 120', 'Banco 001 - Conta 12345-6', 'joao.silva@email.com'),
