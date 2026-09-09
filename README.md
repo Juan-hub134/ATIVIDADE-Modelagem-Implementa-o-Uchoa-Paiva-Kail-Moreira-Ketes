@@ -129,5 +129,20 @@ CREATE TABLE contrato (
     ('Cartão de crédito', '2026-07-20', '2026-08-20', 2, 4, 3);
 
 ```
-## IMAGENS REFERENTES AO pgAdmin 4 
+## IMAGENS REFERENTES AO pgAdmin 4
 
+* TABELA DE CLIENTE
+
+![cliente](./cliente.png)
+
+* TABELA DE ATENDENTE
+
+ ![atendente](./atendente.png)
+
+ * TABELA DE VEICULOS
+ 
+ ![veiculo](./veiculo.png)
+
+* TABELA DE CONTRATOS
+
+![contrato](./contrato.png)
